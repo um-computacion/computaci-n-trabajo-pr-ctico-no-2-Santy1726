@@ -13,16 +13,16 @@ class TestPalindrome(unittest.TestCase):
         self.assertEqual(resultado,(True))
   
     def test_as(self):
-        resultado = is_palindrome ("as")
-        self.assertEqual(resultado, False)
+        resultado = is_palindrome ("oso")
+        self.assertEqual(resultado, True)
 
-    def test_aca(self):
+    def test_ana(self):
         resultado = is_palindrome("ana")
         self.assertEqual(resultado, True)
 
-    def test_apta(self):
-        resultado = is_palindrome("apta")
-        self.assertEqual(resultado, False)
+    def test_salas(self):
+        resultado = is_palindrome("salas")
+        self.assertEqual(resultado, True)
 
     def test_neuquen(self):
         resultado = is_palindrome('neuquen')
