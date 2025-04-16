@@ -27,7 +27,7 @@ class TestPalindrome(unittest.TestCase):
     def test_neuquen(self):
         resultado = is_palindrome('neuquen')
         self.assertEqual(resultado, True)
-
+        
     def test_son_robos_o_sobornos(self):
         resultado = is_palindrome("son robos o sobornos")
         self.assertEqual(resultado, True)
@@ -39,7 +39,6 @@ class TestPalindrome(unittest.TestCase):
     def test_amo_la_pacifica_paloma(self):  
         resultado = is_palindrome("amo la pacifica paloma")
         self.assertEqual(resultado, True)
-    
     
 if __name__ == '__main__':
     unittest.main()
