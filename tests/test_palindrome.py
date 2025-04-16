@@ -27,7 +27,7 @@ class TestPalindrome(unittest.TestCase):
     def test_neuquen(self):
         resultado = is_palindrome('neuquen')
         self.assertEqual(resultado, True)
-        
+
     def test_son_robos_o_sobornos(self):
         resultado = is_palindrome("son robos o sobornos")
         self.assertEqual(resultado, True)
@@ -60,6 +60,22 @@ class TestPalindrome(unittest.TestCase):
         resultado = is_palindrome("el sol no está")
         self.assertEqual(resultado, False)
 
+    def test_vacio(self):
+        resultado = is_palindrome("")
+        self.assertEqual(resultado, True)
+
+    def test_espacios_solos(self):
+        resultado = is_palindrome("     ")
+        self.assertEqual(resultado, True)
+
+    def test_solo_signos(self):
+        resultado = is_palindrome(".,;:!?")
+        self.assertEqual(resultado, True)
+
+    def test_letra_y_espacio(self):
+        resultado = is_palindrome(" a ")
+        self.assertEqual(resultado, True)
+        
 if __name__ == '__main__':
     unittest.main()
 
