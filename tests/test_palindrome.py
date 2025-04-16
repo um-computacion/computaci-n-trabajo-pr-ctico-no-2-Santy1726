@@ -40,6 +40,26 @@ class TestPalindrome(unittest.TestCase):
         resultado = is_palindrome("amo la pacifica paloma")
         self.assertEqual(resultado, True)
     
+    def test_casa(self):
+        resultado = is_palindrome("casa")
+        self.assertEqual(resultado, False)
+
+    def test_programacion(self):
+        resultado = is_palindrome("programacion")
+        self.assertEqual(resultado, False)
+
+    def test_esto_no_es_palindromo(self):
+        resultado = is_palindrome("esto no es palindromo")
+        self.assertEqual(resultado, False)
+
+    def test_me_gusta_python(self):
+        resultado = is_palindrome("me gusta python")
+        self.assertEqual(resultado, False)
+
+    def test_el_sol_no_esta(self):
+        resultado = is_palindrome("el sol no está")
+        self.assertEqual(resultado, False)
+
 if __name__ == '__main__':
     unittest.main()
 
