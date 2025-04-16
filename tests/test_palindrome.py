@@ -75,7 +75,7 @@ class TestPalindrome(unittest.TestCase):
     def test_letra_y_espacio(self):
         resultado = is_palindrome(" a ")
         self.assertEqual(resultado, True)
- 
+        
 if __name__ == '__main__':
     unittest.main()
 
